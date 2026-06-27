@@ -1,9 +1,10 @@
 # 🦓 ZebraRehab
 
-**ZebraRehab** es una aplicación desarrollada en Python que utiliza datos de [OpenStreetMap](https://www.openstreetmap.org/) para detectar y visualizar pasos de peatones dentro de una región geográfica.
+**ZebraRehab** es una aplicación desarrollada en Python que utiliza datos de [OpenStreetMap](https://www.openstreetmap.org/), ortofotos del Plan Nacional de Ortofotografía Aérea (PNOA) y una red neuronal convolucional (CNN) para identificar, clasificar y visualizar pasos de peatones en mal estado en la Comunidad Valenciana.
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
+
 
 ---
 
@@ -24,7 +25,7 @@
 - 🔎 Consulta de datos (pasos de peatones) desde la **Overpass API** (OpenStreetMap)
 - 🧩 Creación de regiones de interés (ROIs) a partir de los datos obtenidos
 - 🚶 Extracción de imágenes aéreas de los pasos de peatones
-- 🧠 Clasificación del estado de los pasos de peatones mediante un modelo **CNN** entrenado
+- 🧠 Clasificación del estado de los pasos de peatones mediante un modelo **CNN** entrenado (test_acc: 70%)
 - 🗺️ Visualización de resultados en la región de búsqueda
 - 💻 Interfaz interactiva basada en **Streamlit**
 
