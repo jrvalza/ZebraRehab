@@ -36,11 +36,7 @@
 ZebraRehab/
 │
 ├── data/
-│   ├── icon/
-│   │   ├── bg.jpg
-│   │   ├── bg2.jpeg
-│   │   ├── icon_bien.png
-│   │   └── icon_mal.png
+│   ├── icon/                 
 │   ├── model/
 │   │   └── CNN.h5            # Modelo de clasificación entrenado
 │   └── to_predict/           # Imágenes pendientes de clasificar
@@ -58,14 +54,7 @@ ZebraRehab/
 │   ├── predict.py            # Inferencia con el modelo CNN
 │   └── ROIs.py               # Extracción de regiones de interés (pasos de peatones)
 │
-├── misc/
-│   ├── movie.gif
-│   ├── Picture1.png
-│   ├── Picture2.png
-│   ├── Picture3.png
-│   ├── Picture4.png
-│   └── Picture5.png
-│
+├── misc/                     # Screenshots
 ├── main.py
 ├── requirements.txt
 └── README.md
@@ -75,22 +64,25 @@ ZebraRehab/
 
 ## 🖼️ Capturas de pantalla
 
+
 ### 🎥 Video demostración
 ![Demostración](misc/movie.gif)
+
 
 ### 📖 Instrucciones de uso
 ![Instrucciones de uso](misc/Picture1.png)
 
+
 ### 📍 Regiones de interes (ROIs)
 ![ROIs](misc/Picture2.png)
+
 
 ### 🚶 Pasos de peatones detectados
 ![Crosswalks](misc/Picture3.png)
 
+
 ### 📊 Resultados de clasificación
 ![Resultados](misc/Picture4.png)
-
-
 
 ---
 
@@ -129,7 +121,7 @@ La aplicación se abrirá automáticamente en tu navegador en `http://localhost:
 | 🐍 Python | Lenguaje principal |
 | 🎈 Streamlit | Interfaz de usuario |
 | 🌐 Requests | Peticiones HTTP a Overpass API |
-| 🗺️ OpenStreetMap / Overpass API | Fuente de datos geográficos |
+| 🗺️ PNOA / OpenStreetMap / Overpass API | Fuente de datos geográficos |
 | 🧠 TensorFlow / Keras | Modelo CNN para clasificación de pasos de peatones (`CNN.h5`) |
 
 ---
