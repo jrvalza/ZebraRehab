@@ -1,0 +1,142 @@
+# 🦓 ZebraRehab
+
+**ZebraRehab** es una aplicación desarrollada en Python que utiliza datos de [OpenStreetMap](https://www.openstreetmap.org/) para detectar y visualizar pasos de peatones dentro de una región geográfica.
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
+
+---
+
+## 📑 Tabla de contenidos
+
+- [Funcionalidades](#-funcionalidades)
+- [Estructura del proyecto](#-estructura-del-proyecto)
+- [Capturas de pantalla](#️-capturas-de-pantalla)
+- [Instalación](#️-instalación)
+- [Ejecución](#️-ejecución)
+- [Tecnologías usadas](#-tecnologías-usadas)
+- [Notas](#-notas)
+
+---
+
+## 🚀 Funcionalidades
+
+- 🔎 Consulta de datos (pasos de peatones) desde la **Overpass API** (OpenStreetMap)
+- 🧩 Creación de regiones de interés (ROIs) a partir de los datos obtenidos
+- 🚶 Extracción de imágenes aéreas de los pasos de peatones
+- 🧠 Clasificación del estado de los pasos de peatones mediante un modelo **CNN** entrenado
+- 🗺️ Visualización de resultados en la región de búsqueda
+- 💻 Interfaz interactiva basada en **Streamlit**
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+ZebraRehab/
+│
+├── data/
+│   ├── icon/
+│   │   ├── bg.jpg
+│   │   ├── bg2.jpeg
+│   │   ├── icon_bien.png
+│   │   └── icon_mal.png
+│   ├── model/
+│   │   └── CNN.h5            # Modelo de clasificación entrenado
+│   └── to_predict/           # Imágenes pendientes de clasificar
+│
+├── info/
+│   ├── __init__.py
+│   └── info.py               # Sidebar
+│
+├── Logica/
+│   ├── __init__.py
+│   ├── folders.py            # Gestión de carpetas y rutas
+│   ├── GetMap.py             # Descarga/obtención de imágenes
+│   ├── map.py                # Renderizado del mapa
+│   ├── OSM.py                # Consultas a Overpass API / OpenStreetMap
+│   ├── predict.py            # Inferencia con el modelo CNN
+│   └── ROIs.py               # Extracción de regiones de interés (pasos de peatones)
+│
+├── misc/
+│   ├── movie.gif
+│   ├── Picture1.png
+│   ├── Picture2.png
+│   ├── Picture3.png
+│   ├── Picture4.png
+│   └── Picture5.png
+│
+├── main.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🖼️ Capturas de pantalla
+
+### 🎥 Video demostración
+![Demostración](misc/movie.gif)
+
+### 📖 Instrucciones de uso
+![Instrucciones de uso](misc/Picture1.png)
+
+### 📍 Regiones de interes (ROIs)
+![ROIs](misc/Picture2.png)
+
+### 🚶 Pasos de peatones detectados
+![Crosswalks](misc/Picture3.png)
+
+### 📊 Resultados de clasificación
+![Resultados](misc/Picture4.png)
+
+
+
+---
+
+## ⚙️ Instalación
+
+```bash
+git clone https://github.com/jrvalza/ZebraRehab.git
+cd ZebraRehab
+pip install -r requirements.txt
+```
+
+> 💡 Se recomienda usar un entorno virtual (`venv` o `conda`) para evitar conflictos de dependencias.
+
+```bash
+python -m venv venv
+source venv/bin/activate    # En Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Ejecución
+
+```bash
+streamlit run main.py
+```
+
+La aplicación se abrirá automáticamente en tu navegador en `http://localhost:8501`.
+
+---
+
+## 🧠 Tecnologías usadas
+
+| Tecnología | Uso |
+|---|---|
+| 🐍 Python | Lenguaje principal |
+| 🎈 Streamlit | Interfaz de usuario |
+| 🌐 Requests | Peticiones HTTP a Overpass API |
+| 🗺️ OpenStreetMap / Overpass API | Fuente de datos geográficos |
+| 🧠 TensorFlow / Keras | Modelo CNN para clasificación de pasos de peatones (`CNN.h5`) |
+
+---
+
+## 📌 Notas
+
+- La API de Overpass puede limitar peticiones si se abusa del servicio.
+- Se recomienda configurar `timeout` y un `User-Agent` adecuado en las requests.
+- Para regiones muy grandes, las consultas pueden tardar más o ser rechazadas por el servidor público de Overpass; considera usar una instancia propia o un mirror alternativo.
+

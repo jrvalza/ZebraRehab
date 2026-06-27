@@ -1,0 +1,14 @@
+opencv-python-headless
+altair==5.0.1
+folium==0.14.0
+geopandas==0.13.2
+keras==2.13.1
+numpy==1.22.2
+pandas==1.4.1
+Pillow==9.0.0
+pyproj==3.6.0
+Requests==2.31.0
+Shapely==2.0.1
+streamlit==1.25.0
+streamlit_folium==0.13.0
+tensorflow==2.13.0
