@@ -5,8 +5,9 @@
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13.0-FF6F00?logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-2.13.1-D00000?logo=keras&logoColor=white)
+![PNOA](https://img.shields.io/badge/PNOA-Ortofotos-0066CC)
 ![OpenStreetMap](https://img.shields.io/badge/OpenStreetMap-Data-7EBC6F?logo=openstreetmap&logoColor=white)
+
 ---
 
 ![Demostración](misc/movie.gif)
@@ -29,7 +30,7 @@
 
 - 🔎 Consulta de datos (pasos de peatones) desde la **Overpass API** (OpenStreetMap)
 - 🧩 Creación de regiones de interés (ROIs) a partir de los datos obtenidos
-- 🚶 Extracción de imágenes aéreas de los pasos de peatones
+- 🚶 Extracción de imágenes aéreas de los pasos de peatones (**PNOA**)
 - 🧠 Clasificación del estado de los pasos de peatones mediante un modelo **CNN** entrenado (test_acc: 70%)
 - 🗺️ Visualización de resultados en la región de búsqueda
 - 💻 Interfaz interactiva basada en **Streamlit**
