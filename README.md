@@ -9,6 +9,10 @@
 ![OpenStreetMap](https://img.shields.io/badge/OpenStreetMap-Data-7EBC6F?logo=openstreetmap&logoColor=white)
 ---
 
+![Demostración](misc/movie.gif)
+
+---
+
 ## 📑 Tabla de contenidos
 
 - [Funcionalidades](#-funcionalidades)
@@ -65,11 +69,6 @@ ZebraRehab/
 ---
 
 ## 🖼️ Capturas de pantalla
-
-
-### 🎥 Video demostración
-![Demostración](misc/movie.gif)
-
 
 ### 📖 Instrucciones de uso
 ![Instrucciones de uso](misc/Picture1.png)
