@@ -131,6 +131,4 @@ La aplicación se abrirá automáticamente en tu navegador en `http://localhost:
 ## 📌 Notas
 
 - La API de Overpass puede limitar peticiones si se abusa del servicio.
-- Se recomienda configurar `timeout` y un `User-Agent` adecuado en las requests.
-- Para regiones muy grandes, las consultas pueden tardar más o ser rechazadas por el servidor público de Overpass; considera usar una instancia propia o un mirror alternativo.
-
+- El análisis de regiones pequeñas permite obtener un mejor rendimiento en la generación de resultados.
