@@ -32,7 +32,7 @@
 - 🔎 Consulta de datos (pasos de peatones) desde la **Overpass API** (OpenStreetMap)
 - 🧩 Creación de regiones de interés (ROIs) a partir de los datos obtenidos
 - 🚶 Extracción de imágenes aéreas de los pasos de peatones (**PNOA**)
-- 🧠 Clasificación del estado de los pasos de peatones mediante un modelo **CNN** entrenado (test_acc: 70%)
+- 🧠 Clasificación del estado de los pasos de peatones mediante un modelo **CNN** entrenado (test_acc: 84.9%)
 - 🗺️ Visualización de resultados en la región de búsqueda
 - 💻 Interfaz interactiva basada en **Streamlit**
 
